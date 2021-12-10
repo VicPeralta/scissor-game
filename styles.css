@@ -5,13 +5,18 @@ html{
 .container-options{
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 .title{
     text-align: center;
     font-size: 3em;
     margin: 7px;
 }
+.header-container{
+    margin-top:10px;
+}
 .option{
+    box-sizing: border-box;
     width: 300px;
     height: 250px;
     border: 1px solid lightgray;
@@ -21,6 +26,7 @@ html{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 .option-text{
     font-size: 2em;
@@ -33,18 +39,16 @@ html{
     background-color: transparent;
     opacity: 1;
 }
+.option:active{
+    background-color: tomato;
+}
 .option >img:hover{
     opacity: .5;
 }
 .option:hover{
     border: 10px solid red;
 }
-.selected{
-    background-color:tomato;
-}
-.unselected{
-    background-color: white;
-}
+
 .hidden{
     display:none;
 }
@@ -61,5 +65,14 @@ html{
 }
 .statistic-text{
     font-size: 1.3em;
-    margin:7px auto;
+    margin:3px auto;
 }
+@media screen and (min-height:800px){
+    .header-container{
+        margin-top:50px;
+    }
+    .container-options{
+        margin-top:50px;
+    }
+} 
+    
