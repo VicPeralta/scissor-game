@@ -37,13 +37,13 @@ class Game {
         computer.textContent = `Computer:${this.computerScore}`;
         const user = document.getElementById('user-score');
         user.textContent = `You:${this.userScore}`;
-        const total = document.getElementById('total-plays');
-        total.textContent = `Total plays:${this.totalPlays}`;
         if (this.totalPlays == 0) {
             messageResult.classList.remove('hidden');
             computerChoice.classList.remove('hidden');
         }
         this.totalPlays++;
+        const total = document.getElementById('total-plays');
+        total.textContent = `Total plays:${this.totalPlays}`;
     }
     playScissor(userChoice) {
         let validOptions = "rock paper scissors";
