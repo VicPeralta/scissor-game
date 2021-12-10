@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper, Rock or Scissors!!!</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+    <h1 class="title">Let's play!!!</h1>
+    <h2 class="title">Make your choice by selecting an icon</h2>
+    <div class="container-options">
+        <div class="option unselected" id='rock'>
+            <img src="./rock.png" alt="">
+            <p class="option-text">Rock</p>
+        </div>
+        <div class="option unselected" id='paper'>
+            <img src="./paper.png" alt="">
+            <p class="option-text">Paper</p>
+        </div>
+        <div class="option unselected" id='scissors'>
+            <img src="./scissors.png" alt="">
+            <p class="option-text">Scissors</p>
+        </div>
+    </div>
+    <p class="result hidden" id="computer-choice">You won!!!</p>
+    <p class="result hidden" id="result">You won!!!</p>
+    <div class="results">
+        <span class="statistic-text">Current score</span>
+        <span class="statistic-text" id="computer-score">Computer: 0</span>
+        <span class="statistic-text" id="user-score">You: 0</span>
+        <span class="statistic-text" id="total-plays">Total plays: 0</span>
+    </div>
+</body>
+
+</html>
